@@ -1,0 +1,7 @@
+{
+  "name": "movi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
