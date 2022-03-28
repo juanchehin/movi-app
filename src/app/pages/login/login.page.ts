@@ -68,7 +68,7 @@ export class LoginPage implements OnInit {
           resData => {
             this.isLoading = false;
             loadingEl.dismiss();
-            this.router.navigateByUrl("/cientes");
+            this.router.navigateByUrl("/principal");
           },
           errRes => {
             loadingEl.dismiss();
