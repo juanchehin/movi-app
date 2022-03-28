@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Persona } from '../../models/persona.model';
 import { environment } from '../../../environments/environment';
-import { Storage } from '@ionic/Storage';
+import { Storage } from '@capacitor/Storage';
 import { tap } from 'rxjs/operators';
 import { User } from 'src/app/models/user.model';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
@@ -94,6 +94,7 @@ private storeAuthData(
     tokenExpirationDate: tokenExpirationDate,
     email: email
   });
+
   Storage.set({ key: 'authData', value: data });
 }
 }
