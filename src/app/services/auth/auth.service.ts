@@ -80,7 +80,7 @@ export class AuthService {
       userData.idToken,
       expirationTime
     );
-    this._user.next(user);
+    // this._user.next(user);
     // this.autoLogout(user.tokenDuration);
 
     this.storeAuthData(
