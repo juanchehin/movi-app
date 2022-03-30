@@ -34,7 +34,7 @@ export class AuthService {
 
   const url = environment.URL_SERVICIOS + '/login';
 
-
+  console.log("pasa auth");
 
   return this.http.post(
     url,
@@ -48,9 +48,13 @@ export class AuthService {
                   return false;
                 }
 
-    this.setUserData.bind(this)
+    // console.log("pasa auth1");
 
-      return true;
+    // this.setUserData.bind(this)
+
+    // console.log("pasa auth 2");
+
+    return true;
     }));
 
   }
@@ -80,6 +84,8 @@ export class AuthService {
       userData.idToken,
       expirationTime
     );
+
+    console.log("user en auth service es : ", user);
     // this._user.next(user);
     // this.autoLogout(user.tokenDuration);
 

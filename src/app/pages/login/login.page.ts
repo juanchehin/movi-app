@@ -60,7 +60,9 @@ export class LoginPage implements OnInit {
 
         if (this.isLogin) {
           authObs = this.authService.login(persona);
+          console.log("authobs es : ",authObs);
         } else {
+          this.showAlert("Error de login");
           // authObs = this.authService.signup(email, password);
         }
 

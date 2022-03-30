@@ -3,23 +3,39 @@
         <ion-header>
             <ion-toolbar>
                 <ion-title>
-                    PairBnB
+                    Menu
                 </ion-title>
             </ion-toolbar>
         </ion-header>
+
+        <!-- Esto debe generarse a partir del menu recibido desde el back -->
         <ion-content>
             <ion-list>
                 <ion-menu-toggle>
                     <ion-item linex="none" routerLink="/places/tabs/discover">
                         <ion-icon name="business" slot="start"></ion-icon>
-                        <ion-label>Discover Places</ion-label>
+                        <ion-label>Planes</ion-label>
                     </ion-item>
                 </ion-menu-toggle>
                 <ion-menu-toggle>
 
                     <ion-item lines="none" routerLink="/bookings">
                         <ion-icon name="checkbox-outline" slot="start"></ion-icon>
-                        <ion-label>Your bookings</ion-label>
+                        <ion-label>Clientes</ion-label>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+
+                    <ion-item lines="none" routerLink="/bookings">
+                        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+                        <ion-label>Caja</ion-label>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+
+                    <ion-item lines="none" routerLink="/bookings">
+                        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+                        <ion-label>Personal</ion-label>
                     </ion-item>
                 </ion-menu-toggle>
                 <ion-menu-toggle>
